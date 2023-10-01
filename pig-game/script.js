@@ -62,7 +62,7 @@ btnHoldEl.addEventListener('click',function(){
         if(score[activeplayer]>=20){
             document.querySelector(`.player--${activeplayer}`).classList.add('player--winner');
             document.querySelector(`.player--${activeplayer}`).classList.remove('player--active');
-            document.querySelector('.winning-message').textContent = `player--${activeplayer+1} won the game🎉🎉`;
+            document.querySelector('.winning-message').textContent = `PLAYER-${activeplayer+1} won the game🎉🎉`;
             diceEl.classList.add('hidden');
             document.querySelector('.winning-message').classList.remove('hidden');
             playing = false;
