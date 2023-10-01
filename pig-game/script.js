@@ -12,13 +12,16 @@ const score1El = document.getElementById('score--1');
 const current0El = document.getElementById('current--0');
 const current1El = document.getElementById('current--1');
 
-const score = [0,0];
-let currentScore = 0;
-let activeplayer = 0;
-let playing  = true;
+let score = [0,0];
+let currentScore ;
+let activeplayer ;
+let playing ;
 
 //initialisation
 const init = function(){
+    score = [0,0];
+    currentScore = 0;
+    activeplayer = 0;
     current0El.textContent = 0;
     current1El.textContent = 0;
     score0El.textContent = 0;
@@ -72,7 +75,6 @@ btnNewEl.addEventListener('click',function(){
     player0El.classList.remove('player--winner');
     player1El.classList.remove('player--winner');
     player1El.classList.remove('player--active');
-    init();
     player0El.classList.add('player--active');
-    
+    init();
 }); 
